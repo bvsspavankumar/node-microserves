@@ -1,0 +1,32 @@
+kubectl apply -f <>.yaml
+kubectl show pods
+kubectl show deployments
+
+docker build -t <unique-name> .
+docker push <unique-name>
+kubectl rollout restart deployment <config>.yaml
+
+kubectl logs <pod-name>
+
+localhost:4005 => event-bus-srv:4005
+localhost:4000 => posts-srv:4000
+localhost:4001 => comments-srv:4001
+localhost:4002 => query-srv:4002
+localhost:4003 => moderation-srv:4003
+React
+localhost:400x => posts.com
+
+kubectl apply -f .  # All files in the folder
+
+Ingress controller: has routing rules
+K8s load balancer service: Retrieves Load balancer of the service provider (AWS/Azure/GC)
+
+kubernetes/ingress-nginx
+
+change the paths, paths across services should not be same 
+to avoid routing complexities
+
+scaffold: command-line tool development
+
+Skaffold:
+> skaffold dev
